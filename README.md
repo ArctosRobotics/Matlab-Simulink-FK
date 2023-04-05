@@ -5,3 +5,4 @@ a simple gain block with a slider for each of the joints.
 
 More info about the robotic arm can be found here: 
 https://arctosrobotics.com/
+![Screenshot](https://github.com/ArctosRobotics/Matlab-Simulink-FK/blob/main/Screenshot_1.png)
