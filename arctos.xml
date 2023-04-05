@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="PC" on="04/04/23||17:35:01" using="Simscape Multibody Link Version 7.0" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="lbmass" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="ruxonros3.iam" uid="ruxonros3.iam_{6917AAE1-46EA-88D5-A04C-8F99055B8976}" version="{89487C62-488C-EE74-30D3-EF6C409A0F26}">
+<AssemblyFile name="ruxonros3.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="b:1" uid="b:1" entityUid="b.ipt_{9CD5FF70-48FE-6A12-17A6-EFAE9642B596}">
+<Transform>
+<Rotation>-0.629678874444488 -0.31040443627008751 -0.71214717651772808 -0.6156326301741667 0.75849441853312549 0.21373507367517766 0.47381534350753207 0.57300549997181094 -0.66870301125304832</Rotation>
+<Translation>40.379559240792076 -3.2064194039380407 98.278534453906701</Translation>
+</Transform>
+</Instance>
+<Instance name="c:1" uid="c:1" entityUid="c.ipt_{DBC94031-433B-7A2A-2C5D-4E9B1C3BE0FE}">
+<Transform>
+<Rotation>-0.64134243324532125 -0.31040443627009329 -0.70166157744515001 -0.61202255926514115 0.7584944185331296 0.22386291341943262 0.46271834874955786 0.57300549997180228 -0.67642917347830833</Rotation>
+<Translation>39.824062723513528 -3.8821328901744376 98.640828226920377</Translation>
+</Transform>
+</Instance>
+<Instance name="a:1" uid="a:1" entityUid="a.ipt_{852E3248-44B7-AFF8-F328-32A17045434F}">
+<Transform>
+<Rotation>-0.62967887444448845 -0.52623906418060484 -0.57146912638273251 -0.61563263017416581 0.78668486352132017 -0.046080257934181607 0.47381534350753268 0.32279927638822714 -0.81932877858651831</Rotation>
+<Translation>26.989190678686722 12.381282132893361 100.37147108944282</Translation>
+</Transform>
+</Instance>
+<Instance name="Z_1:1" uid="Z_1:1" entityUid="Z_1.ipt_{524D1127-41DF-4BC4-B602-BBA40868E7E0}">
+<Transform>
+<Rotation>0.83118005429934372 -0.52623906418060196 0.17947747676314285 0.55600334291705489 0.78668486352132261 -0.26830432007609922 -1.05233950382971e-13 0.32279927638822609 0.94646744643608205</Rotation>
+<Translation>-15.59929060543122 24.989481683264422 -0.40447439079660086</Translation>
+</Transform>
+</Instance>
+<Instance name="base_link:1" grounded="true" uid="base_link:1" entityUid="base_link.ipt_{C46DC7A5-4F27-8F72-0ED1-58B149710A2E}">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="y:1" uid="y:1" entityUid="y.ipt_{3A22761B-40FA-6F5A-5F0C-C9B056C7985C}">
+<Transform>
+<Rotation>0.83118005429934605 -0.49253333522674619 -0.25797408983336667 0.55600334291705145 0.73629752326692222 0.38565041150770218 -1.0935447388613712e-13 -0.4639793863108726 0.88584599625363003</Rotation>
+<Translation>8.1424368282871029 -11.06183047547286 3.2207710897675383</Translation>
+</Transform>
+</Instance>
+<Instance name="x:1" uid="x:1" entityUid="x.ipt_{E23F1D90-4378-1672-C37D-299FEE3B9B5B}">
+<Transform>
+<Rotation>0.83118005429933195 -0.55600334291707842 -9.3962526017147934e-16 0.55600334291707842 0.83118005429933195 -3.0662115445808197e-16 9.5148016165813494e-16 -2.6757739793287941e-16 1</Rotation>
+<Translation>1.2804138544764787 0.38877355710313166 -0.20000000000000284</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="Rotational:1">
+<BaseFrame>
+<InstancePath>
+<Uid>base_link:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 6.9388939039072234e-16 0 -6.9388939039072234e-16 -1 0 0 0 1</Rotation>
+<Translation>2.165525532753676e-14 2.302888769982431 11.10000000000003</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>x:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 1.6653345369377351e-16 5.4748731491966974e-16 -1.6653345369377351e-16 -1 0 5.4748731491966974e-16 0 1</Rotation>
+<Translation>-2.1545757864552826e-14 2.302888769982431 11.300000000000029</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:2">
+<BaseFrame>
+<InstancePath>
+<Uid>x:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-2.1123377526518998e-13 8.7389751618497817e-14 1 -0.92573879546445326 0.37816356589711692 -2.2859492077032049e-13 -0.37816356589711692 -0.92573879546445326 1.0191657070514678e-15</Rotation>
+<Translation>5.7129970234648724 0.28545791396533104 28.806037406575133</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>y:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>2.1797706528755175e-13 5.4634793396346493e-14 1 0.96179661033626673 0.27376500935230463 -2.2460669724972642e-13 -0.27376500935230463 0.96179661033626673 7.1269342220062248e-15</Rotation>
+<Translation>6.3759945160184923 0.28545791396395276 28.806037406575129</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:3">
+<BaseFrame>
+<InstancePath>
+<Uid>y:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>6.5274552061581204e-09 1.9853635842477961e-08 -0.99999999999999978 0.99999903578991867 0.0013886753519793402 6.5550191670616276e-09 0.0013886753519794701 -0.99999903578991844 -1.9844552183246187e-08</Rotation>
+<Translation>4.31299680275092 0.37820055228679922 54.89286953361573</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Z_1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-2.0356303838663811e-15 5.0720100734572864e-16 -1 1 1.1102230246251662e-16 -2.0356303838663811e-15 1.1102230246251558e-16 -1 -5.0720100734572884e-16</Rotation>
+<Translation>4.0019970234648596 0.37820055228679866 54.892869533615617</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:5">
+<BaseFrame>
+<InstancePath>
+<Uid>a:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>2.72552337090804e-15 -1.3487281325766994e-15 1 0.085687952719630034 0.99632202362424893 1.1102230246251567e-15 -0.99632202362424893 0.085687952719630034 2.83106871279415e-15</Rotation>
+<Translation>3.8250241045872677 -25.497111230018785 56.814805340979113</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>b:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1.8114289221537185e-05 1.0469860926769813e-05 0.99999999978112741 0.44338385356826604 0.8963318349769378 -1.3528862970457745e-06 -0.89633183479491962 0.44338385344671483 -2.0878581381278405e-05</Rotation>
+<Translation>3.6520241045872592 -25.497111230018835 56.819786696250411</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:6">
+<BaseFrame>
+<InstancePath>
+<Uid>b:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 -3.3306690738754622e-16 1.8873791418627661e-15 1.8873791418627661e-15 -3.8857805861880543e-16 -1 3.3306690738754696e-16 1 -3.8857805861880479e-16</Rotation>
+<Translation>-0.07097561977171217 -31.034078267107773 56.820528101986035</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>c:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-0.99999999999999989 3.271040329470702e-16 1.1657341758564144e-15 -1.165734175856414e-15 4.4408920985006291e-16 -1 -3.2710403294707074e-16 -0.99999999999999989 -4.4408920985006262e-16</Rotation>
+<Translation>-0.070975619771712087 -30.901578267107777 56.820528101986035</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:7">
+<BaseFrame>
+<InstancePath>
+<Uid>Z_1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 2.8731419974231071e-16 -1.9354533750061477e-15 -1.9354533750061477e-15 -1.1102230246251506e-16 1 2.8731419974231046e-16 1 1.1102230246251563e-16</Rotation>
+<Translation>-0.081913247238396728 -11.990754447713186 57.012566028277227</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>a:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-0.99999999997511846 -4.8294976056407828e-15 7.0543141480194915e-06 7.0543141458631726e-06 2.4724759713827979e-05 0.99999999966946151 -1.744210517532431e-10 0.99999999969434317 -2.4724759713212752e-05</Rotation>
+<Translation>-0.081913247238396478 -12.190754447713186 57.012566028277227</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="a.ipt" uid="a.ipt_{852E3248-44B7-AFF8-F328-32A17045434F}" version="{C02CC47D-1F16-125B-F710-2795456CB79B}">
+<PartFile name="a.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.59021491659324343</Mass>
+<CenterOfMass>-0.098297132109079394 -17.042468044065561 56.923249843867701</CenterOfMass>
+<Inertia>22.676876108461059 13.57146116181789 29.426230879635927 -0.18103392503794749 -0.00046022947335859498 1.3109509212426929e-05</Inertia>
+</MassProperties>
+<GeometryFile name="a_ipt_e50b8fa6.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="b.ipt" uid="b.ipt_{9CD5FF70-48FE-6A12-17A6-EFAE9642B596}" version="{A04458B9-C2EC-0FED-E5FB-66266328EA91}">
+<PartFile name="b.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.12173700363107853</Mass>
+<CenterOfMass>-0.064809967888274936 -27.178718242141251 56.821496625308313</CenterOfMass>
+<Inertia>2.02994937107258 0.99675220625702055 1.7304126298823539 -0.0046342967988166495 3.2916830288911566e-05 0.0025172560400909846</Inertia>
+</MassProperties>
+<GeometryFile name="b_ipt_808ff210.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="base_link.ipt" uid="base_link.ipt_{C46DC7A5-4F27-8F72-0ED1-58B149710A2E}" version="{E6EF4C8F-8DE7-9ABF-6191-EEA48AFF0635}">
+<PartFile name="base_link.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>3.5527325089385986</Mass>
+<CenterOfMass>2.7254640541984542e-05 4.2242087912609572 5.4861601908730391</CenterOfMass>
+<Inertia>181.52944778081704 105.77722668185993 211.61789056993024 -2.2602928990190265 0.00037498783550034867 -0.00067612694955248665</Inertia>
+</MassProperties>
+<GeometryFile name="base_link_ipt_afa60d16.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="c.ipt" uid="c.ipt_{DBC94031-433B-7A2A-2C5D-4E9B1C3BE0FE}" version="{B4A2D821-F7E8-DD23-06E9-F5194E1B33C3}">
+<PartFile name="c.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.025939441802945461</Mass>
+<CenterOfMass>-0.070975061103242393 -31.890422169301218 56.817755833711324</CenterOfMass>
+<Inertia>0.21530770750946249 0.41574388745582835 0.21561079130725194 2.3491993262723554e-05 -6.1224356272759909e-08 -4.751022324001042e-09</Inertia>
+</MassProperties>
+<GeometryFile name="c_ipt_b90ab5c4.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="x.ipt" uid="x.ipt_{E23F1D90-4378-1672-C37D-299FEE3B9B5B}" version="{116F768F-C15C-3598-140E-DBC5091AF0E1}">
+<PartFile name="x.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>1.9253248335329767</Mass>
+<CenterOfMass>1.7416552098314556e-05 1.836973392034889 17.193078477831818</CenterOfMass>
+<Inertia>93.330370647849051 107.32241702505399 90.161569367112179 3.7502999700038053 -3.1329369341478894e-05 -0.00014471776005377029</Inertia>
+</MassProperties>
+<GeometryFile name="x_ipt_a46c673c.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="y.ipt" uid="y.ipt_{3A22761B-40FA-6F5A-5F0C-C9B056C7985C}" version="{1E9D129A-63DE-0142-C189-DC365F64B9D2}">
+<PartFile name="y.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>2.2752485420798605</Mass>
+<CenterOfMass>0.0079972700039372142 0.95477931425759999 34.987974055924703</CenterOfMass>
+<Inertia>219.64789768416063 236.59266327230026 68.910487196594104 -12.088669738288095 -1.7404478285243385e-09 1.4337063092284553e-10</Inertia>
+</MassProperties>
+<GeometryFile name="y_ipt_e1b9131d.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Z_1.ipt" uid="Z_1.ipt_{524D1127-41DF-4BC4-B602-BBA40868E7E0}" version="{5C03B8E8-6186-EEE9-1F7F-E926CD0157DB}">
+<PartFile name="Z_1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>1.1160517420071929</Mass>
+<CenterOfMass>0.19831399884818965 -3.3984405021484818 55.892125801892085</CenterOfMass>
+<Inertia>35.856380621286576 14.477860397565644 33.129232558089292 4.9862167659125411 0.1307906923983628 -0.72797134649073814</Inertia>
+</MassProperties>
+<GeometryFile name="Z_1_ipt_97491d4c.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
